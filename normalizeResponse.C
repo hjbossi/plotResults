@@ -14,8 +14,8 @@ Hannah Bossi <hannah.bossi@yale.edu>
 void normalizeResponse()
 {
   // ========================================== Hard Coded Parameters =============================================
-  TFile* f = new TFile("particleLevelCut_021420.root");
-  char* histname = "hybridDetResp";
+  TFile* f = new TFile("predicitonResults_RF_Mar17th.root");
+  char* histname = "linCorrelationPartLevel";
   Bool_t debugNorm = kFALSE;// if we want to check that the normalization is one.
   
   // gStyle Settings
@@ -62,6 +62,7 @@ void normalizeResponse()
 
   if(debugNorm){
     // check that the response is normalized properly, print an error message if not.
+    std::cout << numBinsY << std::endl;
     for(Int_t k= 1; k < numBinsY+1; k++){
       Double_t probability = response->ProjectionX(Form("px_%d", k), k,k)->Integral();
       std::cout << probability << std::endl;

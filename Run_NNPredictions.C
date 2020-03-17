@@ -11,13 +11,13 @@ void Run_NNPredictions()
   neuralNetPredictions* j;
   TFile* fout;
 
-  TString filename = "/home/alidock/PredictionTrees/predictionTree_LinearRegression_Simple_For_LHC16j5_Embedded_R040.root";
+  TString filename = "/home/alidock/PredictionTrees/predictionTree_NeuralNetwork_For_LHC16j5_Embedded_R040.root";
   TFile* f = new TFile(filename);
-  TTree* tr = (TTree*)f->Get("predictionTree_LinearRegression_Simple_LHC16j5_Embedded_R040");
+  TTree* tr = (TTree*)f->Get("predictionTree_NeuralNetwork_LHC16j5_Embedded_R040");
   j = new neuralNetPredictions(tr);
   j->Init(tr);
   j->Loop();
-  TString outputFilename = "predicitonResults_LR_Mar17th.root";
+  TString outputFilename = "predicitonResults_NN_Mar17th.root";
   fout = new TFile(outputFilename, "RECREATE");
   j->Write(fout);
 }

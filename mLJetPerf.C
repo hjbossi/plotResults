@@ -57,7 +57,7 @@ void mLJetPerf::Loop(Int_t pTHardBin)
 
       // ====================================== Hard Coded Parameters =======================================                                                        
       // Edit these to make easy edits to vary the configuration for running this~                                                                                   
-      Double_t jetRadius            = 0.4;
+      Double_t jetRadius            = 0.2;
       Bool_t useDerivedScaling      = kFALSE; // by default, use James's scaling.
       Bool_t jamesCuts              = kTRUE; // LTC, area cut, max track pT cut
       Bool_t outlierRemoval         = kFALSE; // use Nico's cut, can edit

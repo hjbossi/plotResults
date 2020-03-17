@@ -402,7 +402,7 @@ void neuralNetPredictions::Init(TTree *tree)
 
    TH1::SetDefaultSumw2();
    linCorrelation                   = new TH2D("linCorrelation", "Detector Level p_{T} vs. ML True p_{T}", 400,0,400,400,0,400);
-   linCorrelationPartLevel          = new TH2D("linCorrelationPartLevel", "",19,35,120,13, xbins);
+   linCorrelationPartLevel          = new TH2D("linCorrelationPartLevel", "",400,0,400,400,0,400);
    hybridDetResp                    = new TH2D("hybridDetResp", "",1000,0,400,1000,0,400);
    mLTruePartResp                   = new TH2D("mLTruePartResp", "",1000,0,400,1000,0,400);
    mLTrueDetResp                    = new TH2D("mLTrueDetResp", "",1000,0,400,1000,0,400);
