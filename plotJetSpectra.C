@@ -1,5 +1,6 @@
 // plotJetSpectra.C - plots James's hybrid jet spectra
 void plotJetSpectra(){
+  //Only use this for James's Jet Performance
   /*
   TFile *_file0 = TFile::Open("../data/jetPerf4240_11212018/AnalysisResults.root");
   AliEmcalList* listTemp = (AliEmcalList*)_file0->Get("AliAnalysisTaskEmcalJetPerformance_tracks_caloClusters_04_7GeV_histos");
