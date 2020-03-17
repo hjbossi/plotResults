@@ -213,7 +213,7 @@ dBin-1]);
         }
       }
 
-      hybridSpectra->Fill(hybridPt,scale*scalingFactors[pTHardBin -1]*rk[pTHardBin-1]);
+      hybridSpectra->Fill(ptRec,scale*scalingFactors[pTHardBin -1]*rk[pTHardBin-1]);
       detSpectra->Fill(detLevelPt,scale*scalingFactors[pTHardBin -1]*rk[pTHardBin-1]);
       partSpectra->Fill(partLevelPt,scale*scalingFactors[pTHardBin -1]*rk[pTHardBin-1]);
 
